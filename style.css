@@ -2,50 +2,106 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    grid-template-rows: 90px 1fr 70px;
+    margin: unset;
 }
 
-    body{
+body{
     display: grid;
     height: 100vh;
+    grid-template-rows: 150px 1fr 100px;
+    margin: 0px 200px 0px 200px;
+    /* font-family: 'Righteous', cursive; */
+    background-image: url(./img/background.jpg)
 }
 
-    h1{
-        display: flex;
-        place-items: center;
-        place-content: center;
-        gap: 10px;
-    }
-
-    main{
-    background-color: salmon;
-    display: grid;
-    
-}
-
-.cima{
+header{
     display: grid;
 }
 
-.esquerda{
-    background-color: green;
+h1{
+    display: flex;
+    place-items: center;
+    place-content: center;
+    gap: 10px;
 }
 
-.direita{
-    background-color: blue;
-    transform: translate(60%);
+.pt2{
+    color: maroon;
 }
 
+main{
+    display: grid;
+    grid-template-rows: 4fr 2fr;
+    row-gap: 24px;
+}
 
-    header{
+.faixa__principal{
+    display: grid;
+    grid-template-areas: 
+    "principal secundaria"
+    "principal secundaria";
+    gap: 24px;
+    grid-template-columns: 600px 1fr;
+}
+
+.img__principal{
+    grid-area: principal;
+    place-items: center;
+    transform: translate(-10%);
+
+}
+
+.img__secundaria{
+    grid-area: secundaria;
+    display: grid;
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img4";
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.img1{
+
+    grid-area: img1;
+    transform: translate(-20%);
+
+}
+
+.img2{
+   
+    grid-area: img2;
+    transform: translate(-20%);
+
+}
+
+.img3{
     
-}
-
-    footer{
-    background-color: violet;
+    grid-area: img3;
+    transform: translate(-20%);
 
 }
 
-.showimg {
-    height: 10%;
+.img4{
+    
+    grid-area: img4;
+    transform: translate(-20%);
+
+
 }
+
+.faixa__secundaria{
+    background-color: rgb(78, 80, 82);
+}
+
+
+
+
+/* 
+footer{
+    background-color: lightsteelblue;
+}
+
+.ver__mais{
+    background-color: lightseagreen;
+} */
