@@ -91,17 +91,51 @@ main{
 }
 
 .faixa__secundaria{
-    background-color: rgb(78, 80, 82);
-}
-
-
-
-
-/* 
-footer{
-    background-color: lightsteelblue;
+    
 }
 
 .ver__mais{
-    background-color: lightseagreen;
-} */
+    border-radius: 50px;
+    background-color: black;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ver__mais p{
+    color: white;
+    text-decoration: none;
+}
+.faixa__secundaria{
+    display: grid;
+    column-gap: 24px;
+    grid-template-columns: 2fr 2fr 3fr;
+
+}
+
+.img5{
+    background-image: url(./img/FOTO\ 5.jpg);
+    background-size: 115%;
+}
+
+.img6{
+    background-image: url(./img/FOTO\ 6.jpg);
+    background-size: 115%;
+}
+
+.img7{
+    background-image: url(./img/FOTO\ 7.jpg);
+    background-size: 95%;
+}
+
+
+}footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
