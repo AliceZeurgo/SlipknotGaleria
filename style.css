@@ -2,15 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: unset;
+    overflow: hidden;
 }
 
 body{
     display: grid;
     height: 100vh;
-    grid-template-rows: 150px 1fr 100px;
-    margin: 0px 200px 0px 200px;
-    /* font-family: 'Righteous', cursive; */
+    grid-template-rows: 150px 1fr 150px;
+    margin: 0px 400px 0px 400px;
+    font-family: 'Righteous', cursive;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-family: 'Ubuntu', sans-serif;
     background-image: url(./img/background.jpg)
 }
 
@@ -19,20 +21,21 @@ header{
 }
 
 h1{
-    display: flex;
+    display: grid;
     place-items: center;
     place-content: center;
-    gap: 10px;
+    color: #102333;
 }
 
-.pt2{
+p + p{
     color: maroon;
+    /* text-decoration-line: underline; */
 }
 
 main{
     display: grid;
     grid-template-rows: 4fr 2fr;
-    row-gap: 24px;
+    row-gap: 15px;
 }
 
 .faixa__principal{
@@ -40,15 +43,19 @@ main{
     grid-template-areas: 
     "principal secundaria"
     "principal secundaria";
-    gap: 24px;
-    grid-template-columns: 600px 1fr;
+    gap: 15px;
+    grid-template-columns: 7fr 6fr;
 }
 
 .img__principal{
     grid-area: principal;
+    background-image: url(./img/FOTO\ PRINCIPAL.jpg);
+    background-size: cover;
+    border-style: solid;
+    border-color: #102333;
     place-items: center;
-    transform: translate(-10%);
-
+    display: flex;
+    align-items: center;
 }
 
 .img__secundaria{
@@ -57,85 +64,87 @@ main{
     grid-template-areas: 
     "img1 img2"
     "img3 img4";
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.img__secundaria *{
+    border-style: solid;
+    border-color: #102333;
 }
 
 .img1{
-
+    background-image: url(./img/FOTO\ 1.jpg);
+    background-size: cover;
     grid-area: img1;
-    transform: translate(-20%);
-
 }
 
 .img2{
-   
+    background-image: url(./img/FOTO\ 2.jpg);
+    background-size: cover;
     grid-area: img2;
-    transform: translate(-20%);
-
 }
 
 .img3{
-    
+    background-image: url(./img/FOTO\ 3.jpg);
+    background-size: cover;
     grid-area: img3;
-    transform: translate(-20%);
-
 }
 
 .img4{
-    
+    background-image: url(./img/FOTO\ 4.jpg);
+    background-size: cover;
     grid-area: img4;
-    transform: translate(-20%);
-
-
+}
+.faixa__secundaria{
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: 2fr 2fr 3fr;
 }
 
-.faixa__secundaria{
-    
+.faixa__secundaria *{
+    border-style: solid;
+    border-color: #102333;
+}
+
+.img5{
+    background-image: url(./img/FOTO\ 5.jpg);
+    background-size: cover;
+}
+
+.img6{
+    background-image: url(./img/FOTO\ 6.jpg);
+    background-size: cover;
+}
+
+.img7{
+    background-image: url(./img/FOTO\ 7.jpg);
+    background-size: cover;
+}   
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ver__mais{
     border-radius: 50px;
-    background-color: black;
+    background-color: #102333;
     align-items: center;
     width: 150px;
     height: 40px;
-    font-size: 2vh;
+    font-size: 1.3em;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .ver__mais p{
     color: white;
-    text-decoration: none;
-}
-.faixa__secundaria{
-    display: grid;
-    column-gap: 24px;
-    grid-template-columns: 2fr 2fr 3fr;
-
 }
 
-.img5{
-    background-image: url(./img/FOTO\ 5.jpg);
-    background-size: 115%;
-}
-
-.img6{
-    background-image: url(./img/FOTO\ 6.jpg);
-    background-size: 115%;
-}
-
-.img7{
-    background-image: url(./img/FOTO\ 7.jpg);
-    background-size: 95%;
-}
-
-
-}footer{
+.logoo{
     display: flex;
-    justify-content: center;
+    place-items: center;
     align-items: center;
-
 }
